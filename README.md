@@ -1,2 +1,2 @@
 # marsmina
-微信小程序,简约,框架
+![Aaron Swartz](https://github.com/iomars/marsmina/raw/master/snap.png)
