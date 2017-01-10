@@ -1,0 +1,39 @@
+<view class="swiper-tab">
+  <block wx:for="{{swipertab}}" wx:key="sptab">
+    <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
+  </block>
+</view>
+<swiper current="{{currtab}}" class="swiper-box" duration="300" style="height:{{deviceH-31}}px" bindchange="tabChange">
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view class="title">
+        <text>{{swipertab[0].name}}图</text>
+      </view>
+      <canvas class="canvas" canvas-id="barGraph"></canvas>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view class="title">
+        <text>{{swipertab[1].name}}图</text>
+      </view>
+      <canvas class="canvas" canvas-id="lineGraph"></canvas>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view class="title">
+        <text>{{swipertab[2].name}}图</text>
+      </view>
+      <canvas class="canvas" canvas-id="pieGraph"></canvas>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view class="title">
+        <text>{{swipertab[3].name}}图</text>
+      </view>
+      <canvas class="canvas" canvas-id="areaGraph"></canvas>
+    </scroll-view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,3 @@
+<view class="img-wrapper">
+  <image src="{{catelogimg}}"></image>
+</view>

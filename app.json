@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/users/index",
+    "pages/graph/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1B82D1",
+    "navigationBarTitleText": "marsmina",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1B82D1",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "public/images/home.png",
+        "selectedIconPath": "public/images/homes.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/graph/index",
+        "iconPath": "public/images/analys.png",
+        "selectedIconPath": "public/images/analyss.png",
+        "text": "统计"
+      },
+      {
+        "pagePath": "pages/users/index",
+        "iconPath": "public/images/usr.png",
+        "selectedIconPath": "public/images/usrs.png",
+        "text": "账户"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 8000,
+    "connectSocket": 8000,
+    "uploadFile": 8000,
+    "downloadFile": 8000
+  },
+  "debug": true
+}
